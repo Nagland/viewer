@@ -37,10 +37,12 @@ function getQueryString(name) {
 var targetPDF = decodeURIComponent(getQueryString('val'))
 
 console.log(targetPDF)
-
+console.log(typeof targetPDF)
 var DEFAULT_URL = 'http://7xov2f.com1.z0.glb.clouddn.com/test.pdf'
 
-if (targetPDF == null ||  targetPDF == '') {
+
+
+if (targetPDF == null || targetPDF == 'null' || targetPDF == '') {
   //var DEFAULT_URL = 'http://7xov2f.com1.z0.glb.clouddn.com/spring-boot-reference.pdf'
 } else {
   DEFAULT_URL=targetPDF
